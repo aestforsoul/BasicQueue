@@ -1,0 +1,58 @@
+:root {
+  --white: #fff;
+  --red: #d14e45;
+  --dark-red: #911803;
+}
+
+.page {
+  font-family: "Rubik", sans-serif;
+  color: var(--white);
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  width: 800px;
+  border-radius: 10px;
+  background-color: var(--red);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.task-input,
+.add-button,
+.remove-button {
+  height: 3rem;
+  padding: 0.375rem 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.task-input {
+  width: 70%;
+  color: var(--dark-red);
+  outline: none;
+}
+
+.add-button,
+.remove-button {
+  color: var(--white);
+  width: 30%;
+  margin-top: 1rem;
+  background-color: var(--dark-red);
+  cursor: pointer;
+}
+
+.queue {
+  width: 70%;
+}
